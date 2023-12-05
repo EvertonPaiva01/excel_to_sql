@@ -20,7 +20,12 @@ def mysql_connection(host, user, passwd, database=None):
     return engine.connect()
 
 #Conexão como Banco de Dados
-connection = mysql_connection('localhost', 'root', '9236', 'db_tois_analisados')
+ip = '192.168.87.95'
+user = 'EMLURB'
+password = 'gipemlurb123'
+bank = 'db_tois_analisados'
+
+connection = mysql_connection(ip, user, password, bank)
 
 #Filtrando a tabela e selecionando apenas as colunas que serão utilizadas no banco de dados
 tabela_filtrada = df[['CONTA CONTRATO DA FATURA', 'TOI', 'INSTALAÇÃO', ' MONTANTE', 'STATUS DA ANALISE(ATESTADO)',
