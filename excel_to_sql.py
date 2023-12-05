@@ -20,6 +20,7 @@ def mysql_connection(host, user, passwd, database=None):
     return engine.connect()
 
 #Conexão como Banco de Dados
+#Meu nome não é Johnny
 ip = '192.168.87.95'
 user = 'EMLURB'
 password = 'gipemlurb123'
